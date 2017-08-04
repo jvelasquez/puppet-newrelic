@@ -86,6 +86,7 @@ class newrelic::server::windows (
         'NR_LICENSE_KEY' => $newrelic_license_key
       }
     ],
+    provider        => windows,
     require         => Class['newrelic::params'],
   }
 
